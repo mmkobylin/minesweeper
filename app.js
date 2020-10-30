@@ -19,14 +19,12 @@ document.addEventListener('DOMContentLoaded', () => {
         //empty array declared
         const emptyArray = Array(width*width - bombAmount).fill('empty')
 
-        //creating combined array
+        //creating combined array emptyArray with 
         const gameArray = emptyArray.concat(bombsArray, emptyArray)
 
         //shuffling array
 
-        const shuffledArray = gameArray.sort(() => Math.random() -0.5)
-
-        console.log(shuffledArray)
+        const shuffledArray = gameArray.sort(() => Math.random() - 0.5)
         
         for(let i = 0; i < width*width; i++) {
             const square = document.createElement('div')
@@ -37,8 +35,13 @@ document.addEventListener('DOMContentLoaded', () => {
             squares.push(square)
             squares[i].classList.add('grid-small')
             squares[i].classList.add(shuffledArray[i])
-        }      
-    }
 
-    createBoard()
-}) 
+            //    if (squares.classList.contains('bomb')) {
+            //     squares[i].addEventListener('click', () => {
+            //         squares[i].style.background-color === 'red'
+            //     })
+            }
+
+        }
+        createBoard()
+    })
