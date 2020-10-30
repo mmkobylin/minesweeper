@@ -8,10 +8,15 @@
     display: flex;
     /* wrapping the div items so it fits */
     flex-wrap: wrap;
-    height:400px;
+    height:440px;
     width: 400px;
 }
 
+.grid-small {
+    -webkit-box-shadow: -2px 0px 28px 0px rgba(0,0,0,0.69);
+    -moz-box-shadow: -2px 0px 28px 0px rgba(0,0,0,0.69);
+    box-shadow: -2px 0px 28px 0px rgba(0,0,0,0.69);
+}
 /* styling only the divs inside of the grid */
 
 .grid div {

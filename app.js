@@ -18,9 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
             //appending to the grid
             grid.appendChild(square)
             squares.push(square)
-        }
-    
-        
+            squares[i].classList.add('grid-small')
+
+        }      
     }
 
     createBoard()
