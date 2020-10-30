@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
         //empty array declared
         const emptyArray = Array(width*width - bombAmount).fill('empty')
 
-        //creating combined array emptyArray with 
-        const gameArray = emptyArray.concat(bombsArray, emptyArray)
+        //creating combined array emptyArray with bombArray
+        const gameArray = emptyArray.concat(bombsArray)
 
         //shuffling array
 
