@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
             grid.appendChild(square)
             squares.push(square)
             squares[i].classList.add('grid-small')
-
+            squares[i].classList.add(shuffledArray[i])
         }      
     }
 
