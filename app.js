@@ -13,14 +13,21 @@ document.addEventListener('DOMContentLoaded', () => {
     //createBoard 
     function createBoard(){
 
-        //randomise the bombs 
-
+        //bombs array declared
         const bombsArray = Array(bombAmount).fill('bomb')
+        
+        //empty array declared
         const emptyArray = Array(width*width - bombAmount).fill('empty')
 
-        console.log(bombsArray)
-        console.log(emptyArray)
+        //creating combined array
+        const gameArray = emptyArray.concat(bombsArray, emptyArray)
 
+        //shuffling array
+
+        const shuffledArray = gameArray.sort(() => Math.random() -0.5)
+
+        console.log(shuffledArray)
+        
         for(let i = 0; i < width*width; i++) {
             const square = document.createElement('div')
             //creating separate id for each item
