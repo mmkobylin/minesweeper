@@ -1,3 +1,14 @@
 * {
-    background-color: red;
+    background-color:#ccc7c7;
+}
+
+.grid {
+    background-color: gray;
+    border: 3px solid black;
+    display: flex;
+    /* wrapping the div items so it fits */
+    flex-wrap: wrap;
+    height:400px;
+    width: 400px;
+    
 }
