@@ -1,6 +1,14 @@
+@font-face {
+    font-family: unibody;
+    src: url(./assets/Unibody8Skinny.ttf);
+ }
+
 * {
     background-color:#ccc7c7;
-}
+    /* font-family: ; */
+    font-family: unibody;
+    font-size: 1.65rem;
+} 
 
 .grid {
     background-color: gray;
