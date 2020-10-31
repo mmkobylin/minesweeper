@@ -34,10 +34,26 @@ document.addEventListener('DOMContentLoaded', () => {
             squares[i].classList.add('grid-small')
             squares[i].classList.add(shuffledArray[i])
 
-            //    if (squares.classList.contains('bomb')) {
-            //     squares[i].addEventListener('click', () => {
-            //         squares[i].style.background-color === 'red'
-            //     })
+                for (let i = 0; i < squares.length; i++ ) {
+                    //is it max on the left?
+                    const isLeftEdge = i % width === 0 
+                    //is it on the right?
+                    const isRightEdge = i % width === width -1 
+                }
+
+                // if this square is not a bomb
+                if (squares[i].classList.contains('empty')) {
+                    //we start with no bombs
+                    total = 0 
+                    // if it is not 0 and not on left edge
+                    //and the square on the left contains bomb 
+                    if (i > 0 && !isLeftEdge && squares[i -1].classList.contains('bomb')) {
+                        
+                        //add 1 to total                        
+                        total++
+                    }
+
+                }
             }
 
         }
