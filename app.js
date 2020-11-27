@@ -30,9 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
                                                 //applying Math.random() function evenly
         const shuffleArray = gameArray.sort(() => Math.random() - 0.5)
 
-        console.log(shuffleArray);
-
-
         //making 100 items
         for(let i = 0; i < width*width; i++) {
             //creating div elements
@@ -96,7 +93,6 @@ document.addEventListener('DOMContentLoaded', () => {
  
 
                 squares[i].setAttribute('data', total)
-                console.log(squares[i])
             }
 
         }
@@ -220,6 +216,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isGameOver) return 
         if (!square.classList.contains('checked') && (flags < bombAmount)) {
             if (!square.classList.contains('flag')) {
+                square.classList.add('flag')
                 square.innerHTML = 'F'
                 flags ++
                 checkForWin()
@@ -233,18 +230,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //check for win 
 
-    function checkForWin(){
+    function checkForWin() {
+        ///simplified win argument
         let matches = 0
-
-        for (let i = 0; i < squares.length; i++ ) {
-            if (squares[i].classList.contains('flag') && squares[i].classList.contains('bomb')){
-                matches++
-            }
-
-            if (matches === bombAmount) {
-                console.log('YOU WIN')
-                isGameOver = true
-            }
+    
+        for (let i = 0; i < squares.length; i++) {
+          if (squares[i].classList.contains('flag') && squares[i].classList.contains('bomb')) {
+            matches ++
+          }
+          if (matches === bombAmount) {
+            console.log('YOU WIN!')
+            isGameOver = true
+          }
         }
     }
 
