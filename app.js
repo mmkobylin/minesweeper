@@ -106,6 +106,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         //game over if bomb clicked on
         if (square.classList.contains('bomb')){
+            isGameOver = true
+            square.classList.add('death')
             console.log('Game over')
         } else {
 
