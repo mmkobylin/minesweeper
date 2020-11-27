@@ -20,8 +20,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         //joining array
         const gameArray = emptyArray.concat(bombsArray);
+        
+        //randomising the item
+        const shuffleArray = gameArray.sort(() => Math.random() - 0.5)
 
-        console.log(gameArray);
+        console.log(shuffleArray);
 
 
         //making 100 items
