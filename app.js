@@ -43,6 +43,18 @@ document.addEventListener('DOMContentLoaded', () => {
             //square pushed to an empty array
             squares.push(square)
         }
+
+        for (let i = 0; i < squares.length, i++) {
+
+            //is is on the right edge?
+            const isLeftEdge = (i % width === 0)
+            
+            //if i is divided by 10, it leaves 9 === width (10) - 1
+            const ifRightEdge = (i % width === width - 1 )
+
+            
+
+        }
     }
     //function invoked
     createBoard()
