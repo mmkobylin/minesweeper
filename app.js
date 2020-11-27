@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let bombAmount = 20
 
+    let isGameOver = false
+
     // create board
     function createBoard() {
         //adding bomb property to the squares
@@ -97,17 +99,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //click on square action
     function click(square) {
+
+        if (isGameOver) return 
+
+        if (square.classList.contains('checked') || square.classList.contains('flag')) return
+
+        //game over if bomb clicked on
         if (square.classList.contains('bomb')){
             console.log('Game over')
         } else {
+
+            //change color; display total
             let total = square.getAttribute('data') 
-        
+            
             if (total != 0 ) {
-            square.classList.add('checked')
-            square.innerHTML = total
-            return
+                square.classList.add('checked')
+                square.innerHTML = total
+                return
+            }
         }
-        }
+        
+        //total = 0 just change color
+        square.classList.add('checked')
+
     }
 
 })
