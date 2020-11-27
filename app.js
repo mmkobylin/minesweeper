@@ -42,6 +42,12 @@ document.addEventListener('DOMContentLoaded', () => {
             grid.appendChild(square)
             //square pushed to an empty array
             squares.push(square)
+
+            //adding event listener to each square
+            square.addEventListener('click', function(e) {
+                click(square)
+            })
+
         }
 
         for (let i = 0; i < squares.length; i++) {
@@ -88,5 +94,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     //function invoked
     createBoard()
+
+    //click on square action
+    function click(square) {
+        if (square.classList.contains('bomb')){
+            console.log('Game over')
+        }
+    }
 
 })
