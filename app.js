@@ -22,6 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const gameArray = emptyArray.concat(bombsArray);
         
         //randomising the item
+                            //taking an array and sorting it;
+                                                //applying Math.random() function evenly
         const shuffleArray = gameArray.sort(() => Math.random() - 0.5)
 
         console.log(shuffleArray);
@@ -33,6 +35,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const square = document.createElement('div');
             //attaching number to each square
             square.setAttribute('id', i)
+            
+            //adding class of fill
+            square.classList.add(shuffleArray[i])
             //appending them to grid
             grid.appendChild(square)
             //square pushed to an empty array
