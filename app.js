@@ -18,8 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
         //adding empties - total - amount of bombs
         const emptyArray = Array(width*width - bombAmount).fill('empty')
 
-        console.log(bombsArray);
-        console.log(emptyArray);
+        //joining array
+        const gameArray = emptyArray.concat(bombsArray);
+
+        console.log(gameArray);
 
 
         //making 100 items
