@@ -7,7 +7,8 @@
     background-color:#ccc7c7;
     /* font-family: ; */
     font-family: unibody;
-    font-size: 1.65rem;
+    font-size: 1.2rem;
+    text-align: center;
 } 
 
 .grid {
@@ -27,4 +28,8 @@
 
 .bomb {
     background-color: orange;
+}
+
+.checked {
+    background-color: rgb(94, 245, 94);
 }

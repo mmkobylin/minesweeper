@@ -99,6 +99,14 @@ document.addEventListener('DOMContentLoaded', () => {
     function click(square) {
         if (square.classList.contains('bomb')){
             console.log('Game over')
+        } else {
+            let total = square.getAttribute('data') 
+        
+            if (total != 0 ) {
+            square.classList.add('checked')
+            square.innerHTML = total
+            return
+        }
         }
     }
 
