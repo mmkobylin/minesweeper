@@ -167,12 +167,12 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             //direct right
-            if (currentId > 0 && !isRightEdge) {
+            if (currentId < 98 && !isRightEdge) {
                 const newId = squares[parseInt(currentId) +1].id
                 const newSquare = document.getElementById(newId)
                 click(newSquare)
             }
-        
+            
             //down-left
             if (currentId < 90 && !isLeftEdge) {
                 const newId = squares[parseInt(currentId) -1 + width].id
