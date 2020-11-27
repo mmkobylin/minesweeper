@@ -20,11 +20,16 @@
     height:400px;
     width: 400px;
 }
+.bomb {
+    background-color:violet;
+}
 
 .grid div {
     height: 38px;
     width: 38px;
     border: 1px solid black;
+    border-radius: 6px;
+
 
 }
 
@@ -35,5 +40,5 @@
 }
 
 .death {
-    background-color:black;
+    background-color:red;
 }

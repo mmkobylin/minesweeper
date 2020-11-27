@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //squares being an empty array
     let squares = []; 
 
-    let bombAmount = 20
+    let bombAmount = 10
 
     let isGameOver = false
 
@@ -222,14 +222,31 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!square.classList.contains('flag')) {
                 square.innerHTML = 'F'
                 flags ++
+                checkForWin()
             } else {
                 square.classList.remove('flag')
                 flags -- 
-                square.innerHTML = ''
+                square.innerHTML = ' '
             }
         }
     }
 
+    //check for win 
+
+    function checkForWin(){
+        let matches = 0
+
+        for (let i = 0; i < squares.length; i++ ) {
+            if (squares[i].classList.contains('flag') && squares[i].classList.contains('bomb')){
+                matches++
+            }
+
+            if (matches === bombAmount) {
+                console.log('YOU WIN')
+                isGameOver = true
+            }
+        }
+    }
 
 
 })
