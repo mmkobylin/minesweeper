@@ -108,9 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         //game over if bomb clicked on
         if (square.classList.contains('bomb')){
-            isGameOver = true
-            square.classList.add('death')
-            console.log('Game over')
+            gameOver(square)
         } else {
 
             //change color; display total
@@ -199,6 +197,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
 
+    function gameOver(square) {
+        console.log('BOOM! Game Over')
+        isGameOver = true
+
+        //show all the bombs
+        squares.forEach(square => {
+            if (square.classList.contains('bomb')) {
+                square.classList.add('death')
+            }
+        })
+    }
 
 
 
