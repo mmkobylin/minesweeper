@@ -80,9 +80,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (i > 11 && !isLeftEdge && squares[i-1-width].classList.contains('bomb')) total ++
                 
                 //is the item on right containing bomb?
-                if (i < 100 && !isRightEdge && squares[i+1].classList.contains('bomb')) total ++
+                if (i < 99 && !isRightEdge && squares[i+1].classList.contains('bomb')) total ++
 
-                //is the item directly below containind bomb
+                //is the item directly below containing bomb
                 //changed from 89 to 90 to include last row
                 if (i < 90 && squares[i+width].classList.contains('bomb')) total ++
 
