@@ -119,6 +119,10 @@ document.addEventListener('DOMContentLoaded', () => {
             //change color; display total
             let total = square.getAttribute('data') 
             
+            if (total = 1 ) {
+                square.classList.add('one')
+            }
+
             if (total != 0 ) {
                 square.classList.add('checked')
                 square.classList.remove('div')
