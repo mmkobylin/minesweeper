@@ -1,16 +1,23 @@
+/* importing frontface */
 @font-face {
     font-family: unibody;
     src: url(./assets/Unibody8Skinny.ttf);
  }
 
 * {
-    background-color:#D5B9B2;
+    
     /* font-family: ; */
     font-family: unibody;
     font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
 } 
+
+
+body {
+    background-color: #ECE2D0;
+}
+
 
 .checked {
     background-color: #ECE2D0;
@@ -24,22 +31,29 @@
 .flag {
     background-color: #A26769;
 }
+
 .grid {
     background-color: #CEBEBE;
-    border: 3px solid #6D2E46;
+    border: 7px double #6D2E46;
     display: flex;
-    /* wrapping the div items so it fits */
     flex-wrap: wrap;
     height:400px;
+    margin-left:33%;
+    margin-top:10%;
+
     width: 400px;
+    -webkit-box-shadow: 0px 0px 27px 11px rgba(0,0,0,0.74); 
+    box-shadow: 0px 0px 27px 11px rgba(0,0,0,0.74);
 }
 
 .grid div {
     height: 38px;
     width: 38px;
-
     border: 1px solid #6D2E46;
     border-radius: 6px;
     
 }
-
+h1 {
+    font-family: 'Texturina', serif, Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+}
