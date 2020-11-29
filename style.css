@@ -68,7 +68,11 @@ h1 {
 }
 
 .one {
-    color: blue;
+    color: #202074;
+}
+
+.two {
+    color: rgb(88, 2, 2);
 }
 
 @media only screen and (min-width: 560px) and (max-width: 1000px){
