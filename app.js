@@ -262,4 +262,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
+    document.getElementById("reset").onclick = function() {
+        console.log('reset');
+    };
+
 })
