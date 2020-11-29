@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //squares being an empty array
     let squares = []; 
 
-    let bombAmount = 12
+    let bombAmount = 42
 
     let isGameOver = false
 

@@ -14,6 +14,8 @@
 
 body {
     background-color: #ECE2D0;
+    background: linear-gradient(145deg, rgba(159,140,128,1) 6%, rgba(213,185,178,1) 45%, rgba(236,226,208,1) 83%);
+
 }
 
 .checked {
@@ -59,28 +61,28 @@ footer {
     
 }
 
+.one {
+    color: #1C5D99;
+
+}
+
+.two {
+    color:#780116;
+}
+
+.three {
+    color: #004F2D;
+}
+
+.else {
+    color: #533A7B;
+}
 
 h1 {
     font-family: 'Texturina', serif, Arial, Helvetica, sans-serif;
     font-size: 2rem;
     margin-top:3rem;
     padding:2rem;
-}
-
-.one {
-    color: #202074;
-}
-
-.two {
-    color: rgb(88, 2, 2);
-}
-
-.three {
-    color: rgb(0, 95, 0);
-}
-
-.else {
-    color: rgb(85, 1, 71);
 }
 
 @media only screen and (min-width: 560px) and (max-width: 1000px){
