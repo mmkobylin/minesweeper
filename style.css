@@ -4,7 +4,7 @@
  }
 
 * {
-    background-color:#D5B9B2;
+    
     /* font-family: ; */
     font-family: unibody;
     font-size: 1.2rem;
@@ -24,6 +24,7 @@
 .flag {
     background-color: #A26769;
 }
+
 .grid {
     background-color: #CEBEBE;
     border: 3px solid #6D2E46;
@@ -42,5 +43,9 @@
     border: 1px solid #6D2E46;
     border-radius: 6px;
     
+}
+
+body {
+    background-color: #ECE2D0;
 }
 
