@@ -5,19 +5,16 @@
  }
 
 * {
-    
-    /* font-family: ; */
     font-family: unibody;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     text-align: center;
+    margin:0;
 } 
-
 
 body {
     background-color: #ECE2D0;
 }
-
 
 .checked {
     background-color: #ECE2D0;
@@ -32,28 +29,102 @@ body {
     background-color: #A26769;
 }
 
+footer {
+    background-color: #6D2E46;
+    color: #ECE2D0;
+    font-family: 'Texturina', serif, Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    padding: 2rem;
+    margin-top: 5.06rem;
+}
+
 .grid {
     background-color: #CEBEBE;
     border: 7px double #6D2E46;
     display: flex;
     flex-wrap: wrap;
-    height:400px;
-    margin-left:33%;
-    margin-top:10%;
-
-    width: 400px;
+    height:320px;
+    margin: 2rem;
+    margin-top: 4rem;
+    width: 320px;
     -webkit-box-shadow: 0px 0px 27px 11px rgba(0,0,0,0.74); 
     box-shadow: 0px 0px 27px 11px rgba(0,0,0,0.74);
 }
 
 .grid div {
-    height: 38px;
-    width: 38px;
+    height: 30px;
+    width: 30px;
     border: 1px solid #6D2E46;
     border-radius: 6px;
     
 }
+
+
 h1 {
     font-family: 'Texturina', serif, Arial, Helvetica, sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
+    margin-top:3rem;
+    padding:2rem;
 }
+
+@media only screen and (min-width: 560px) and (max-width: 1000px){
+    * {
+        font-size: 1.2rem;
+    }
+
+    .grid {
+        height:400px;
+        margin-left:24.4%;
+        width:400px;
+        margin-top:2rem;
+    }
+
+    .grid div {
+        height: 38px;
+        width: 38px;
+        border: 1px solid #6D2E46;
+        border-radius: 6px;
+        
+    }
+}
+
+
+@media only screen and (min-width: 1001px) {
+
+    
+    * {
+        font-size: 1.4rem;
+    }
+
+    .grid {
+        height:500px;
+        margin-left:35.5%;
+        margin-top:0;
+        width:500px;
+        margin-top:3rem;
+    }
+
+    .grid div {
+        height: 48px;
+        width: 48px;
+        border: 1px solid #6D2E46;
+        border-radius: 6px;
+        
+    }
+
+    footer {
+        font-size: 1.3rem;
+    }
+
+    h1 {
+        font-family: 'Texturina', serif, Arial, Helvetica, sans-serif;
+        font-size: 3rem;
+        padding: 0;
+        padding-top:0.5rem;
+        margin-top:1rem;
+        
+    }
+
+}
+
+
