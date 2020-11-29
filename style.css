@@ -1,3 +1,4 @@
+/* importing frontface */
 @font-face {
     font-family: unibody;
     src: url(./assets/Unibody8Skinny.ttf);
@@ -11,6 +12,12 @@
     font-weight: bold;
     text-align: center;
 } 
+
+
+body {
+    background-color: #ECE2D0;
+}
+
 
 .checked {
     background-color: #ECE2D0;
@@ -31,6 +38,9 @@
     display: flex;
     flex-wrap: wrap;
     height:400px;
+    margin-left:33%;
+    margin-top:10%;
+
     width: 400px;
     -webkit-box-shadow: 0px 0px 27px 11px rgba(0,0,0,0.74); 
     box-shadow: 0px 0px 27px 11px rgba(0,0,0,0.74);
@@ -39,13 +49,11 @@
 .grid div {
     height: 38px;
     width: 38px;
-
     border: 1px solid #6D2E46;
     border-radius: 6px;
     
 }
-
-body {
-    background-color: #ECE2D0;
+h1 {
+    font-family: 'Texturina', serif, Arial, Helvetica, sans-serif;
+    font-size: 3rem;
 }
-
