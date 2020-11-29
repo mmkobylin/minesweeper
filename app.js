@@ -74,10 +74,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (i > 9 && !isRightEdge && squares[i+1-width].classList.contains('bomb')) total ++
 
                 //is the item directly up containind bomb
-                if (i > 10 && squares[i-width].classList.contains('bomb')) total ++
+                if (i > 9 && squares[i-width].classList.contains('bomb')) total ++
 
                 //is the item on up-left containing bomb?
-                if (i > 11 && !isLeftEdge && squares[i-1-width].classList.contains('bomb')) total ++
+                if (i > 10 && !isLeftEdge && squares[i-1-width].classList.contains('bomb')) total ++
                 
                 //is the item on right containing bomb?
                 if (i < 99 && !isRightEdge && squares[i+1].classList.contains('bomb')) total ++
@@ -170,13 +170,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 click(newSquare)
             }
             //direct up
-            if (currentId > 10) {
+            if (currentId > 9) {
                 const newId = squares[parseInt(currentId) -width].id
                 const newSquare = document.getElementById(newId)
                 click(newSquare)
             }
             //up-left
-            if (currentId > 11 && !isLeftEdge) {
+            if (currentId > 10 && !isLeftEdge) {
                 const newId = squares[parseInt(currentId) -1-width].id
                 const newSquare = document.getElementById(newId)
                 click(newSquare)
