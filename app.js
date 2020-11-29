@@ -121,27 +121,20 @@ document.addEventListener('DOMContentLoaded', () => {
             if (total != 0 ) {
                 if (total == 1 ) {
                     square.classList.add('one')
-                    square.classList.add('checked')
 
-                    square.classList.remove('div')
                 } else if (total == 2 ) {
                     square.classList.add('two')
-                    square.classList.add('checked')
 
-                    square.classList.remove('div')
 
                 } else if (total == 3 ) {
                     square.classList.add('three')
-                    square.classList.add('checked')
 
-                    square.classList.remove('div')
                 } else {
                     square.classList.add('else')
-                    square.classList.add('checked')
 
-                    square.classList.remove('div')
                 }
-
+                    square.classList.add('checked')
+                    square.classList.remove('div')
                     square.innerHTML = total
                     return
                 }
