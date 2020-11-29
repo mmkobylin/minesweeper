@@ -9,6 +9,7 @@
     font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
+    margin:0;
 } 
 
 body {
@@ -66,5 +67,30 @@ h1 {
 
 
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 700px) {
+
+    
+.grid {
+    height:500px;
+    margin-left:33%;
+    margin-top:10%;
+ 
 }
+
+.grid div {
+    height: 30px;
+    width: 30px;
+    border: 1px solid #6D2E46;
+    border-radius: 6px;
+    
+}
+
+
+h1 {
+    font-family: 'Texturina', serif, Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+}
+
+}
+
+
