@@ -260,15 +260,11 @@ document.addEventListener('DOMContentLoaded', () => {
             isGameOver = true
           }
         }
-    }
-
-    function restart() {
-        location.reload();
-    }
+    };
 
     //this is where I get reset button
     document.getElementById("reset").onclick = function() {
-        restart()
+        location.reload();
     };
 
 })
