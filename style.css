@@ -34,7 +34,7 @@ body {
 
 .grid {
     background-color: #CEBEBE;
-    border: 3px solid #6D2E46;
+    border: 7px double #6D2E46;
     display: flex;
     flex-wrap: wrap;
     height:400px;
