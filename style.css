@@ -66,9 +66,30 @@ h1 {
     padding:2rem;
 }
 
+@media only screen and (min-width: 600px) and (max-width: 1000px){
+    * {
+        font-size: 1.2rem;
+    }
+
+    .grid {
+        height:400px;
+        margin-left:24.4%;
+        margin-top:0;
+        width:400px;
+        margin-top:2rem;
+    }
+
+    .grid div {
+        height: 38px;
+        width: 38px;
+        border: 1px solid #6D2E46;
+        border-radius: 6px;
+        
+    }
+}
 
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 1001px) {
 
     
     * {
@@ -77,7 +98,7 @@ h1 {
 
     .grid {
         height:500px;
-        margin-left:26%;
+        margin-left:35.5%;
         margin-top:0;
         width:500px;
         margin-top:3rem;
