@@ -44,7 +44,8 @@ footer {
     display: flex;
     flex-wrap: wrap;
     height:320px;
-    margin-top: 7rem;
+    margin: 2rem;
+    margin-top: 4rem;
     width: 320px;
     -webkit-box-shadow: 0px 0px 27px 11px rgba(0,0,0,0.74); 
     box-shadow: 0px 0px 27px 11px rgba(0,0,0,0.74);
@@ -66,7 +67,7 @@ h1 {
     padding:2rem;
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1000px){
+@media only screen and (min-width: 560px) and (max-width: 1000px){
     * {
         font-size: 1.2rem;
     }
@@ -74,7 +75,6 @@ h1 {
     .grid {
         height:400px;
         margin-left:24.4%;
-        margin-top:0;
         width:400px;
         margin-top:2rem;
     }
