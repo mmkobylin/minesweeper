@@ -6,7 +6,7 @@
 
 * {
     font-family: unibody;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     text-align: center;
     margin:0;
@@ -35,8 +35,9 @@ footer {
     background-color: #6D2E46;
     color: #ECE2D0;
     font-family: 'Texturina', serif, Arial, Helvetica, sans-serif;
-    padding: 3rem;
-    margin-top: 10%;
+    font-size: 1rem;
+    padding: 2rem;
+    margin-top: 3rem;
 }
 
 .grid {
@@ -62,7 +63,8 @@ footer {
 
 h1 {
     font-family: 'Texturina', serif, Arial, Helvetica, sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
+    padding:2rem;
 }
 
 
@@ -70,26 +72,37 @@ h1 {
 @media only screen and (min-width: 700px) {
 
     
-.grid {
-    height:500px;
-    margin-left:33%;
-    margin-top:10%;
- 
-}
+    * {
+        font-size: 1.4rem;
+    }
+    .grid {
+        height:500px;
+        margin-left:26%;
+        width:500px;
+        padding-top:0;
 
-.grid div {
-    height: 30px;
-    width: 30px;
-    border: 1px solid #6D2E46;
-    border-radius: 6px;
     
-}
+    }
 
+    .grid div {
+        height: 48px;
+        width: 48px;
+        border: 1px solid #6D2E46;
+        border-radius: 6px;
+        
+    }
 
-h1 {
-    font-family: 'Texturina', serif, Arial, Helvetica, sans-serif;
-    font-size: 3rem;
-}
+    footer {
+        font-size: 1.3rem;
+    }
+
+    h1 {
+        font-family: 'Texturina', serif, Arial, Helvetica, sans-serif;
+        font-size: 3rem;
+        padding: 0;
+        padding-top:0.5rem;
+        
+    }
 
 }
 
