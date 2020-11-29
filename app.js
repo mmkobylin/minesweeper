@@ -1,6 +1,7 @@
 //loading the entire web
 document.addEventListener('DOMContentLoaded', () => {
 
+    
     const grid = document.querySelector('.grid')
 
     let width = 10
@@ -261,9 +262,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    function restart() {
+        location.reload();
+    }
 
+    //this is where I get reset button
     document.getElementById("reset").onclick = function() {
-        console.log('reset');
+        restart()
     };
 
 })
