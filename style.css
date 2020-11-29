@@ -11,11 +11,9 @@
     text-align: center;
 } 
 
-
 body {
     background-color: #ECE2D0;
 }
-
 
 .checked {
     background-color: #ECE2D0;
@@ -26,28 +24,10 @@ body {
     background-color:#6D2E46;
 }
 
+
+
 .flag {
     background-color: #A26769;
-}
-
-.grid {
-    background-color: #CEBEBE;
-    border: 7px double #6D2E46;
-    display: flex;
-    flex-wrap: wrap;
-    height:400px;
-    margin-top:10%;
-    width: 400px;
-    -webkit-box-shadow: 0px 0px 27px 11px rgba(0,0,0,0.74); 
-    box-shadow: 0px 0px 27px 11px rgba(0,0,0,0.74);
-}
-
-.grid div {
-    height: 38px;
-    width: 38px;
-    border: 1px solid #6D2E46;
-    border-radius: 6px;
-    
 }
 
 footer {
@@ -57,6 +37,27 @@ footer {
     padding: 3rem;
     margin-top: 10%;
 }
+
+.grid {
+    background-color: #CEBEBE;
+    border: 7px double #6D2E46;
+    display: flex;
+    flex-wrap: wrap;
+    height:320px;
+    margin-top:10%;
+    width: 320px;
+    -webkit-box-shadow: 0px 0px 27px 11px rgba(0,0,0,0.74); 
+    box-shadow: 0px 0px 27px 11px rgba(0,0,0,0.74);
+}
+
+.grid div {
+    height: 30px;
+    width: 30px;
+    border: 1px solid #6D2E46;
+    border-radius: 6px;
+    
+}
+
 
 h1 {
     font-family: 'Texturina', serif, Arial, Helvetica, sans-serif;
