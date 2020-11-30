@@ -223,8 +223,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function gameOver(square) {
-        flagNumber.innerHTML = 'GAME OVER'
-        info.innerHTML = 'BOOM!'
+        flagNumber.innerHTML = 'GAME OVER !'
+        info.innerHTML = '! '
 
         isGameOver = true
 
