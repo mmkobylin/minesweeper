@@ -1,15 +1,18 @@
 # Minesweeper
 
-Minesweeper game created to work of JS functions, losely based on Ania Kubow YT tutorial. 
-I applied my own logic to adding majority of classes and I wrote recursion functions. 
-Also media queries had been written for purpose of this application by me. 
+Minesweeper game created to work on JS functions, losely based on Ania Kubow YT tutorial. 
+
+I applied my own logic to adding majority of classes and I wrote recursion functions.
+
+Also media queries had been written for purpose of this application. 
 
 ## How to play
 
 To win, you need to find all 20 bombs. 
 Left click opens the square, right one puts an 'F' for flag where the player think the bomb is. 
 
-If game is lost, the flags put on fields without bombs show X on black background; the correct flags remain the same. 
+If game is lost, the flags put on fields without bombs will show X on black background. 
+The flags that are correct will remain the same. 
 
 ## Achievments:
 - adjusting basic version for a mobile use
