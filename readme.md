@@ -7,8 +7,9 @@ Minesweeper game created to work of JS functions, based on Ania Kubow YT tutoria
 - creating a media query for a large screen 
 - adding class style depending on total
 - deployment 
+- amount of flags used left showing
+- 'Game Over!' and 'VICTORY' displaying accordingly
 
 ## Next steps: 
 
-- amount of flags used left showing
 - showing if player was wrong about the flag
