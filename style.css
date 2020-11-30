@@ -81,6 +81,18 @@ footer {
     
 }
 
+h1 {
+    font-family: 'Texturina', serif, Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    margin-top:3rem;
+    padding:2rem;
+}
+
+#info, #outcome {
+    font-size: 2rem;
+    font-family: 'Cinzel', serif, Arial, Helvetica, sans-serif;;
+}
+
 .one {
     color: #1C5D99;
 }
@@ -97,12 +109,7 @@ footer {
     color: #533A7B;
 }
 
-h1 {
-    font-family: 'Texturina', serif, Arial, Helvetica, sans-serif;
-    font-size: 2rem;
-    margin-top:3rem;
-    padding:2rem;
-}
+
 
 @media only screen and (min-width: 560px) and (max-width: 1000px){
     * {
