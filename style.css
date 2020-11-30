@@ -25,16 +25,19 @@ button {
     font-family: 'Cinzel', serif, Arial, Helvetica, sans-serif;;
     font-size: 1.5rem;
     font-weight: bold;
-    
     padding:0.5rem;
     padding-left:2rem;
     padding-right:2rem;
     margin-top:3rem;
+    -webkit-box-shadow: 0px 0px 27px 11px rgba(0,0,0,0.74); 
+    box-shadow: 0px 0px 27px 11px rgba(0,0,0,0.74);
 }
 
 button:active, button:hover {
-    border-color: 4rem solid #6D2E46;
-    
+    border-color: 4rem solid #000;
+    background-color: #6D2E46;
+    color: #CEBEBE;
+    font-weight: bolder;
 }
 
 .checked {
