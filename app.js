@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //squares being an empty array
     let squares = []; 
 
-    let bombAmount = 10
+    let bombAmount = 20
 
     let isGameOver = false
 
@@ -267,7 +267,7 @@ document.addEventListener('DOMContentLoaded', () => {
           }
           if (matches === bombAmount) {
             flagNumber.innerHTML = ''
-            info.innerHTML = 'YOU WIN!'
+            info.innerHTML = '! VICTORY !'
             isGameOver = true
           }
         }
