@@ -15,6 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let flags = 0 
 
+    // requring the score
+    let scoreDisplay = document.getElementById('outcome');
+
     // create board
     function createBoard() {
         //adding bomb property to the squares
@@ -218,7 +221,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function gameOver(square) {
-        console.log('BOOM! Game Over')
+        scoreDisplay.innerHTML = 'GAME OVER'
         isGameOver = true
 
         //show all the bombs
@@ -237,10 +240,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 square.innerHTML = 'F'
                 flags ++
                 checkForWin()
+                scoreDisplay = bombAmount - flags
+                
             } else {
                 square.classList.remove('flag')
                 flags -- 
                 square.innerHTML = ' '
+                scoreDisplay = bombAmount - flags
             }
         }
     }
@@ -257,6 +263,7 @@ document.addEventListener('DOMContentLoaded', () => {
           }
           if (matches === bombAmount) {
             console.log('YOU WIN!')
+            scoreDisplay.innerHTML = 'YOU WIN!'
             isGameOver = true
           }
         }
