@@ -22,11 +22,11 @@ button {
     background-color: #CEBEBE;
     border: 3px solid #6D2E46;
     border-radius: 5px;
-    font-family: 'Texturina', serif, Arial, Helvetica, sans-serif;
+    font-family: 'Cinzel', serif, Arial, Helvetica, sans-serif;;
     font-size: 1.5rem;
     font-weight: bold;
     
-    padding-bottom:0.5rem;
+    padding:0.5rem;
     padding-left:2rem;
     padding-right:2rem;
     margin-top:3rem;
@@ -84,13 +84,15 @@ footer {
 h1 {
     font-family: 'Texturina', serif, Arial, Helvetica, sans-serif;
     font-size: 2rem;
-    margin-top:3rem;
-    padding:2rem;
+    margin-bottom:1rem;
+
+    margin-top:1rem;
+    padding:0.5rem;
 }
 
-#info, #outcome {
-    font-size: 2rem;
-    font-family: 'Cinzel', serif, Arial, Helvetica, sans-serif;;
+span {
+    font-size: 1.5rem;
+    font-family: 'Cinzel', serif, Arial, Helvetica, sans-serif;
 }
 
 .one {
@@ -127,8 +129,7 @@ h1 {
         height: 38px;
         width: 38px;
         border: 1px solid #6D2E46;
-        border-radius: 6px;
-        
+        border-radius: 6px;   
     }
 }
 
@@ -167,6 +168,9 @@ h1 {
         padding-top:0.5rem;
         margin-top:1rem;
         
+    }
+    span {
+        font-size: 2rem;
     }
 
 }
