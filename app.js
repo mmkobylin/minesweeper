@@ -230,6 +230,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         //show all the bombs
         squares.forEach(square => {
+            if (square.classList.contains('flag') && !square.classList.contains('bomb')) {
+                square.classList.add('wrong')
+                square.innerHTML = 'X'
+            }
+
             if (square.classList.contains('bomb')) {
                 square.classList.add('death')
             }
