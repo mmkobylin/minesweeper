@@ -1,5 +1,7 @@
 # Minesweeper
 
+Live link: https://mmkobylin.github.io/minesweeper/
+
 Minesweeper game created to work on JS functions, losely based on Ania Kubow YT tutorial. 
 
 I applied my own logic to adding majority of classes and I wrote recursion functions.
